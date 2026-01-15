@@ -1,0 +1,8 @@
+{
+  "id": "remember_velocity",
+  "name": "RememberVelocity",
+  "version": "1.0.0",
+  "description": "Send players to spawn or their last known server on Velocity.",
+  "authors": ["OpenAI"],
+  "dependencies": []
+}

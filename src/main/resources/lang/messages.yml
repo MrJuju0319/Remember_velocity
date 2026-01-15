@@ -1,0 +1,10 @@
+prefix: "&7[&bRemember&fVelocity&7]"
+
+# Message sent when a server is missing and fallback is used.
+server-missing: "{prefix} &cServer introuvable: {server}. Retour au spawn."
+
+# Debug messages
+log-initial-choice: "{prefix} &7Initial server choisi: {server} (joueur={player})."
+log-no-record: "{prefix} &7Aucun serveur connu pour {player}, envoi au spawn {server}."
+log-known-record: "{prefix} &7Serveur connu pour {player}: {server}."
+log-saved-server: "{prefix} &7Serveur sauvegardé pour {player}: {server}."

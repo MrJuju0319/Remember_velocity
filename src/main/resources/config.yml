@@ -1,0 +1,39 @@
+# RememberVelocity configuration
+# Compatible with Java 21/22 and Velocity 3.4.0
+
+# Enable extra verbose logging.
+debug: false
+
+# The default server where new players should be sent.
+# Must match a server name in velocity.toml.
+spawn-server: "spawn"
+
+# Path to the language file (relative to the plugin data folder).
+lang-file: "lang/messages.yml"
+
+storage:
+  # type: yaml or mariadb
+  type: "yaml"
+
+  yaml:
+    # File used for YAML storage (relative to the plugin data folder).
+    file: "players.yml"
+    # Save to disk after every update.
+    flush-on-update: true
+
+  mariadb:
+    host: "127.0.0.1"
+    port: 3306
+    database: "velocity"
+    username: "velocity"
+    password: "change-me"
+    table: "remember_velocity_players"
+    use-ssl: false
+    connection-timeout-ms: 5000
+    maximum-pool-size: 10
+    create-table: true
+
+# Decide when to record the last server.
+recording:
+  # Update the last known server when the player connects to a server.
+  on-server-connect: true
