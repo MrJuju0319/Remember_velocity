@@ -73,7 +73,7 @@ public class RememberVelocity {
                     event.setInitialServer(server.get());
                     return;
                 }
-                logger.warn(language.message("last-server-missing", Map.of(\"server\", lastServer.get())));
+                logger.warn(language.message("last-server-missing", Map.of("server", lastServer.get())));
             }
         }
         String spawnName = config.getSpawnServer();
@@ -81,7 +81,7 @@ public class RememberVelocity {
         if (spawn.isPresent()) {
             event.setInitialServer(spawn.get());
         } else {
-            logger.warn(language.message("spawn-missing", Map.of(\"server\", spawnName)));
+            logger.warn(language.message("spawn-missing", Map.of("server", spawnName)));
         }
     }
 
@@ -152,7 +152,7 @@ public class RememberVelocity {
             case "mariadb" -> storage = new MariaDbStorage(config.getStorage().getMariadb());
             case "yaml" -> storage = new YamlStorage(dataDirectory.resolve(config.getStorage().getYaml().getFile()));
             default -> {
-                logger.warn(language.message("storage-unknown", Map.of(\"type\", type)));
+                logger.warn(language.message("storage-unknown", Map.of("type", type)));
                 storage = new YamlStorage(dataDirectory.resolve(config.getStorage().getYaml().getFile()));
             }
         }
