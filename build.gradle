@@ -35,4 +35,8 @@ shadowJar {
     archiveClassifier = ''
 }
 
+tasks.named('jar') {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 build.dependsOn shadowJar
