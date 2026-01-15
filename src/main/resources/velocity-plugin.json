@@ -1,0 +1,8 @@
+{
+  "id": "remembervelocity",
+  "name": "RememberVelocity",
+  "version": "1.0.0",
+  "description": "Send players to spawn or their last server",
+  "authors": ["OpenAI"],
+  "main": "com.example.remembervelocity.RememberVelocity"
+}

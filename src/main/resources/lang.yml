@@ -1,0 +1,3 @@
+last-server-missing: "Dernier serveur {server} introuvable, retour au spawn."
+spawn-missing: "Serveur spawn '{server}' introuvable dans la configuration Velocity."
+storage-unknown: "Type de stockage inconnu '{type}', utilisation du YAML."
