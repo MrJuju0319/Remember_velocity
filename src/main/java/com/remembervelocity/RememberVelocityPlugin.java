@@ -15,7 +15,7 @@ import java.nio.file.Path;
 @Plugin(
         id = "remember_velocity",
         name = "RememberVelocity",
-        version = "1.0.0",
+        version = "1.0.1",
         description = "Send players to spawn or their last known server on Velocity."
 )
 public class RememberVelocityPlugin {
